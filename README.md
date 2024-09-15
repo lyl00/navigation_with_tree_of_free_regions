@@ -7,9 +7,22 @@ This is an implementation of a framework which navigate the robot in cluttered a
 
 ## Example
 <p align ="center">
+
+### Maze 
 <img src="docs/sim_maze.gif" width=75%>
+
+---
+
+### Forest 
 <img src="docs/forest.gif" width=75%>
+
+---
+
+### Real World 
 <img src="docs/real_world_forest.gif" width=75%>
+
+---
+
 </p>
 
 ## Navigation with Graph of Free Regions
