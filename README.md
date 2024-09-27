@@ -1,9 +1,9 @@
-# Navigation with Tree of Free Regions
+# FRTree Planner
 <p align ="center">
-<img src="docs/framework.png" width=75%>
+<img src="docs/framework.png" width=100%>
 </p>
 
-In this work, we present FRTree planner, a novel robot navigation framework featuring a tree of free regions specifically designed for cluttered and unknown environments with narrow passages. 
+FRTree planner is a robot navigation framework featuring a **Tree** of **F**ree **R**egion specifically designed for cluttered and unknown environments with narrow passages. 
 The framework continuously incorporates real-time perceptive information to expand the tree toward explorable and traversable directions, with their geometric structure embedded in the sequence of extracted free regions. This dynamically constructed tree efficiently encodes the connectivity information of the free space, allowing the robot to select the most viable intermediate goals, navigate around dead-end situations, and avoid dynamic obstacles without relying on a prior map. 
 Crucially, by examining the geometric relationship between the free regions and the robot along the tree, the framework can identify narrow passages that are suitable for the robot's specific geometry. By integrating this tree information with backend trajectory optimization, the framework generates robust and adaptable obstacle avoidance behaviors to navigate through narrow passages.
 Through extensive simulations and real-world experiments, our framework demonstrates its advantages over benchmark methods in generating safe, efficient motion plans, enabling the robot to navigate effectively through highly cluttered and unknown terrains with narrow gaps.
@@ -30,8 +30,8 @@ Navigate from different start to goal in three area with different obstacle dens
 
 </p>
 
-## Navigation with Tree of Free Regions
-Code will be released soon.
+## Implementation
+Code will be released soon, and the folder structure is shown as below:
 The structure of the code is shown as below:
 ```
 local_map
@@ -61,11 +61,11 @@ third_party
 └── mosek
 
 ```
-_local_map_ manage the update of the tree; 
+``_local_map_ ``manage the update of the tree; 
 
-_planner_manage_ has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
+``_planner_manage_`` has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
 
-_Altro_ and _SDPsolver_ solve the trajectory optimization problem.
+``_Altro_`` and ``_SDPsolver_`` solve the trajectory optimization problem.
 ## Authors
 
 - [@Yulin Li](yline@connect.ust.hk)
