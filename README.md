@@ -61,11 +61,11 @@ third_party
 └── mosek
 
 ```
-local_map manage the update of the tree; 
+_local_map_ manage the update of the tree; 
 
-planner_manage has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
+_planner_manage_ has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
 
-Altro and SDPsolver solve the trajectory optimization problem.
+_Altro_ and _SDPsolver_ solve the trajectory optimization problem.
 ## Authors
 
 - [@Yulin Li](yline@connect.ust.hk)
