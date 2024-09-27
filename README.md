@@ -1,4 +1,4 @@
-# Navigation with Graph of Free Regions
+# Navigation with Tree of Free Regions
 <p align ="center">
 <img src="docs/framework.png" width=75%>
 </p>
@@ -30,7 +30,7 @@ Navigate from different start to goal in three area with different obstacle dens
 
 </p>
 
-## Navigation with Graph of Free Regions
+## Navigation with Tree of Free Regions
 Code will be released soon.
 The structure of the code is shown as below:
 ```
