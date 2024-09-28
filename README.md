@@ -32,7 +32,6 @@ Navigate from different start to goal in three area with different obstacle dens
 
 ## Implementation
 Code will be released soon, and the folder structure is shown as below:
-The structure of the code is shown as below:
 ```
 local_map
 ├── include
@@ -61,11 +60,11 @@ third_party
 └── mosek
 
 ```
-``_local_map_ ``manage the update of the tree; 
+``local_map``manage the update of the tree; 
 
-``_planner_manage_`` has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
+``planner_manage`` has a FSM to manage the pipeline of the framework (including the intermediate goal selecting and dynamic obstacle detection); 
 
-``_Altro_`` and ``_SDPsolver_`` solve the trajectory optimization problem.
+``Altro`` and ``SDPsolver`` solve the trajectory optimization problem.
 ## Authors
 
 - [@Yulin Li](yline@connect.ust.hk)
